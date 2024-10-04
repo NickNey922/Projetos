@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/*Bom aqui está uma configuração que fiz para aumentar meu conhecimento em Flexbox, estou aprendendo então é isso.
+
+Algumas configurações padrões*/
+
+:root{ /*alguma modificação de cor só trocar os codigos aqui*/
+    --cor0: #1F2837;
+    --cor1: #ffffff;
+    --cor2: #c0c0c0;
+    --cor3: #000000;
+    --cor4: #2C5291;
+    --cor5: #8AA2BF;
+    --cor6: #595959;
+    --main-color: #ffffff;
+    --letra: "Lato";
+
+}
+
+*{ /*aqui deixei sem algumas configurações automaticas e troquei a fonte do conteudo*/
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--letra);
+    
+}
+
+body{
+    margin: auto;
+    max-width: 1200px;
+    min-width: 280px;
+    background-color: var(--cor5);
+}
+main{
+    width: 1300px;
+    background-color: var(--main-color);
+    border-radius: 0px 0px 20px 20px;
+    margin: auto;
+}
+main > h1{
+    text-align: center;
+    padding: 10px;
+
+    width: 1280px;
+    height: 60px;
+
+    background-color: var(--cor6);
+    color: var(--cor1);
+}
+
+menu{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+a:hover{
+    color: var(--cor3);
+}
+a.lado:hover{
+    
+    color:var(--cor3);
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Fornecedor */
+
+section.forn{
+    background-color: var(--cor0);
+    height: 510px;
+
+    font-size: 1.2em;
+
+    border-radius: 20px;
+    margin: 10px;
+    
+    padding: 10px;
+
+    flex-basis: 270px;
+    flex-shrink: 1;
+
+    text-align: center;
+
+}
+
+section.forn > div > ul > li{
+    margin: 40px;
+}
+section.forn > div > h2{
+    color: white;
+}
+
+/*Centro da pagina*/
+section.centro{
+    margin: 10px;
+    
+    border-radius: 20px;
+
+    flex-basis: 750px;
+    flex-shrink: 2;
+
+    height: 500px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+section.centro > div{
+    background-color: var(--cor0);
+    align-content: center;
+
+    width: 220px;
+    height: 150px;
+    margin: 5px;
+    padding: 0px 5px;
+    border-radius: 20px;
+
+}
+
+div.meio { /*quadrado azul claro*/
+    background-color: var(--cor4);
+    margin: 10px;
+    
+    border-radius: 10px;
+
+    font-size: 0.7em;
+    align-content: center;
+    text-align: center;
+
+    width: 190px;
+    height: 100px;
+    border: 5px solid var(--cor1);
+}
+
+div#espaco-grande{
+    width: 430px;
+}
+
+div#espaco{ /*quadrado de entrada e saida */
+    width: 400px;
+}
+
+div.meio > a{
+    height: 100%;
+    width: 29.7%;
+}
+
+div.meio > a.espaco{ /*espaco maior da entrada e saida*/
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+div.meio:hover{
+    border: 5px solid var(--cor3);
+}
+
+
+
+/*Lado direito dá pagina*/
+section.outro{
+    margin: 10px;
+    height: 350px;
+
+    flex-basis: 230px;
+    flex-shrink: 1;
+
+
+}
+
+section.outro > ul{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section.outro > ul > a.lado{
+    background-color: var(--cor2);
+
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+
+
+    border-radius: 5px;
+    
+}
+section.outro > ul > a:hover{
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+}
+
+section.outro > ul > a {
+    height: 30px;
+    
+    border-radius: 5px;
+}
