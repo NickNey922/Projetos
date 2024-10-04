@@ -162,6 +162,7 @@ div.meio > a.espaco{ /*espaco maior da entrada e saida*/
 
 div.meio:hover{
     border: 5px solid var(--cor3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.700);
 }
 
 
