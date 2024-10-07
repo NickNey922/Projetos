@@ -77,6 +77,7 @@ ul{
 section.forn{
     background-color: var(--cor0);
     height: 510px;
+    width: 290px;
 
     font-size: 1.2em;
 
@@ -85,8 +86,7 @@ section.forn{
     
     padding: 10px;
 
-    flex-basis: 270px;
-    flex-shrink: 1;
+    flex:0 1 auto;
 
     text-align: center;
 
@@ -105,8 +105,7 @@ section.centro{
     
     border-radius: 20px;
 
-    flex-basis: 750px;
-    flex-shrink: 2;
+    flex:0 2 auto;
 
     height: 500px;
 
@@ -171,9 +170,9 @@ div.meio:hover{
 section.outro{
     margin: 10px;
     height: 350px;
+    width: 250px;
 
-    flex-basis: 230px;
-    flex-shrink: 1;
+    flex:0 1 auto;
 
 
 }
