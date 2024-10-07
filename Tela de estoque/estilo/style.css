@@ -14,11 +14,19 @@ Algumas configurações padrões*/
     --cor4: #2C5291; /* cor triade #2C5291 + #91392C + #77912C*/
     --cor5: #889AB8;
     --cor6: #595959;
-    --cor7: #91702C; /*Complementar da cor4 */
+    --cor7: #91702C; /*Complementar da cor4 coloquei ela como forma de contraste para uso nos botoes centrais*/
     --main-color: #ffffff;
     --letra: "Lato";
 
 }
+
+
+span{
+    width: 60px;
+    height: 60px;
+    background-color: green;
+}
+
 
 *{ /*aqui deixei sem algumas configurações automaticas e troquei a fonte do conteudo*/
     padding: 0px;
@@ -34,7 +42,7 @@ body{
     background-color: var(--cor5);
 }
 main{
-    width: 1300px;
+    width: 1200px;
     background-color: var(--main-color);
     border-radius: 0px 0px 20px 20px;
     margin: auto;
@@ -43,7 +51,7 @@ main > h1{
     text-align: center;
     padding: 10px;
 
-    width: 1280px;
+    width: 1180px;
     height: 60px;
 
     background-color: var(--cor6);
@@ -100,7 +108,7 @@ section.forn > div > h2{
 
 /*Centro da pagina*/
 section.centro{
-    margin: 10px;
+    margin: 5px;
     
     border-radius: 20px;
 
@@ -115,11 +123,13 @@ section.centro{
 
 section.centro > div{
     background-color: var(--cor0);
-    align-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
 
     width: 220px;
     height: 150px;
-    margin: 5px;
     padding: 0px 5px;
     border-radius: 20px;
 
@@ -132,7 +142,7 @@ section.centro a:hover{
 
 div.meio { /*quadrado azul claro*/
     background-color: var(--cor4);
-    margin: 10px;
+    margin: 0px;
     
     border-radius: 10px;
 
@@ -146,12 +156,17 @@ div.meio { /*quadrado azul claro*/
 }
 
 div#espaco-grande{
-    width: 430px;
+    width: 455px;
+
 }
 
 div#espaco{ /*quadrado de entrada e saida */
-    width: 400px;
+    width: 430px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
+
 
 div.meio > a{
     height: 100%;
@@ -167,10 +182,9 @@ div.meio:hover{
     background-color: var(--cor7);
     border: 5px solid var(--cor3);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.700);
-    transition: 0.5s;
+    
+    transition: 0.2s;
 }
-
-
 
 /*Lado direito dá pagina*/
 section.outro{
