@@ -61,12 +61,9 @@ a{
     color: var(--cor1);
 }
 a:hover{
-    color: var(--cor3);
+    color: var(--cor5);
 }
-a.lado:hover{
-    
-    color:var(--cor3);
-}
+
 
 ul{
     list-style-type: none;
@@ -124,6 +121,10 @@ section.centro > div{
     padding: 0px 5px;
     border-radius: 20px;
 
+}
+
+section.centro a:hover{
+    color: var(--cor3);
 }
 
 div.meio { /*quadrado azul claro*/
@@ -184,6 +185,7 @@ section.outro > ul{
 
 section.outro > ul > a.lado{
     background-color: var(--cor2);
+    color: var(--cor3);
 
     margin: 10px;
     padding: 5px;
@@ -196,6 +198,7 @@ section.outro > ul > a.lado{
 section.outro > ul > a:hover{
     border: 1px solid black;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+    color: white;
 }
 
 section.outro > ul > a {
