@@ -20,14 +20,6 @@ Algumas configurações padrões*/
 
 }
 
-
-span{
-    width: 60px;
-    height: 60px;
-    background-color: green;
-}
-
-
 *{ /*aqui deixei sem algumas configurações automaticas e troquei a fonte do conteudo*/
     padding: 0px;
     margin: 0px;
@@ -108,7 +100,7 @@ section.forn > div > h2{
 
 /*Centro da pagina*/
 section.centro{
-    margin: 5px;
+    margin: 10px;
     
     border-radius: 20px;
 
@@ -182,7 +174,7 @@ div.meio:hover{
     background-color: var(--cor7);
     border: 5px solid var(--cor3);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.700);
-    
+
     transition: 0.2s;
 }
 
