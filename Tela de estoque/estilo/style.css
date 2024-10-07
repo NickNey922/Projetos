@@ -11,9 +11,10 @@ Algumas configurações padrões*/
     --cor1: #ffffff;
     --cor2: #c0c0c0;
     --cor3: #000000;
-    --cor4: #2C5291;
-    --cor5: #8AA2BF;
+    --cor4: #2C5291; /* cor triade #2C5291 + #91392C + #77912C*/
+    --cor5: #889AB8;
     --cor6: #595959;
+    --cor7: #91702C; /*Complementar da cor4 */
     --main-color: #ffffff;
     --letra: "Lato";
 
@@ -77,6 +78,7 @@ section.forn{
     width: 290px;
 
     font-size: 1.2em;
+    font-weight: bolder;
 
     border-radius: 20px;
     margin: 10px;
@@ -125,6 +127,7 @@ section.centro > div{
 
 section.centro a:hover{
     color: var(--cor3);
+    transition: 1s;
 }
 
 div.meio { /*quadrado azul claro*/
@@ -161,8 +164,10 @@ div.meio > a.espaco{ /*espaco maior da entrada e saida*/
 }
 
 div.meio:hover{
+    background-color: var(--cor7);
     border: 5px solid var(--cor3);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.700);
+    transition: 0.5s;
 }
 
 
@@ -172,6 +177,8 @@ section.outro{
     margin: 10px;
     height: 350px;
     width: 250px;
+
+    font-weight: bolder;
 
     flex:0 1 auto;
 
