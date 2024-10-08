@@ -99,6 +99,7 @@ section.forn > div > h2{
 }
 
 /*Centro da pagina*/
+
 section.centro{
     margin: 10px;
     
@@ -129,7 +130,7 @@ section.centro > div{
 
 section.centro a:hover{
     color: var(--cor3);
-    transition: 1s;
+    transition: .2s;
 }
 
 div.meio { /*quadrado azul claro*/
@@ -177,6 +178,7 @@ div.meio:hover{
 
     transition: 0.2s;
 }
+
 
 /*Lado direito dá pagina*/
 section.outro{
