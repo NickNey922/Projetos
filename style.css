@@ -28,7 +28,8 @@ Tela grande: acima de 1200px
 
 }
 
-@media screen and (min-width: 450px) and (max-width: 600px){
+
+@media screen and (max-width: 768px) {
     body{
         background-color: #16f55523;
     }
@@ -61,11 +62,5 @@ Tela grande: acima de 1200px
     a:hover{
         color: var(--cor6);
     }
-        
-}
-
-
-@media screen and (min-width: ) {
-    
 }
 
