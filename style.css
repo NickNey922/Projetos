@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*
+Typical Device breackpoints
+----------------------------
+Tela pequena: ate 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px 
+Desktop: 992px até 1200px
+Tela grande: acima de 1200px
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --cor0: #ffffff;
+    --cor1: #F41616;
+    --cor2: #B53E3E; 
+    --cor3: #754545;
+    --cor4: #16f555;
+    --cor5: #44A05E;
+    --cor6: #394B3E;
+    --cor7: #000000;
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px){
+    body{
+        background-color: #16f55523;
+    }
+    
+    header{
+        padding: 10px;
+        text-align: center;
+        background-color: var(--cor2);
+        color: var(--cor4);
+    
+    }
+    
+    main{
+        text-align: center;
+        margin: auto;
+    
+        background-color: var(--cor0);
+        border: 2px solid black;
+    
+        max-width: 700px;
+        min-width: 450px;
+    }
+    
+    a{
+        font-size: 1.2em;
+        text-decoration: none;
+        color: var(--cor1);
+    }
+    
+    a:hover{
+        color: var(--cor6);
+    }
+        
+}
+
+
+@media screen and (min-width: ) {
+    
+}
+
