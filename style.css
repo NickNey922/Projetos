@@ -25,18 +25,19 @@ Tela grande: acima de 1200px
     --cor5: #44A05E;
     --cor6: #394B3E;
     --cor7: #000000;
+    --cor8: #2196F3;
 
 }
 
 body{
-    background-color: #16f55523;
+    background-image: linear-gradient(to left, #f4161649, #16f5554d);
 }
     
 header{
     padding: 10px;
     text-align: center;
     background-color: var(--cor2);
-    color: var(--cor4);
+    color: var(--cor0);
     
 }
     
@@ -48,17 +49,31 @@ main{
     border: 2px solid black;
     
     max-width: 700px;
-    min-width: 450px;
+    min-width: 300px;
+    height: 150px;
+}
+
+main > p{
+    padding: 10px;
 }
     
-a{
+main > a{
     font-size: 1.2em;
+    padding: 2px;
+    margin: 10px;
     text-decoration: none;
-    color: var(--cor1);
+
+    color: var(--cor7);
+
+    border: 2px solid ;
+    background-color: var(--cor4);
 }
     
 a:hover{
-    color: var(--cor6);
+    color: var(--cor7);
+    background-color: #F41616;
+    border: 2px solid var(--cor7);
+    transition: 1s;
 }
         
 
