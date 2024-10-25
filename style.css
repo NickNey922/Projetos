@@ -50,18 +50,31 @@ main{
     
     max-width: 700px;
     min-width: 300px;
-    height: 150px;
 }
 
 main > p{
     padding: 10px;
+    margin-bottom: 15px;
 }
-    
-main > a{
+
+h2{
+    font-weight: bold;
+    margin: 15px;
+}
+
+div.projeto{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+ a.links{
     font-size: 1.2em;
-    padding: 2px;
+    padding: 4px;
     margin: 10px;
     text-decoration: none;
+
+    flex: auto;
 
     color: var(--cor7);
 
@@ -69,19 +82,36 @@ main > a{
     background-color: var(--cor4);
 }
     
-a:hover{
+a.links:hover{
     color: var(--cor7);
     background-color: #F41616;
     border: 2px solid var(--cor7);
-    transition: 1s;
+}
+
+div.redes{
+    margin: 10px;
+}
+
+div.redes > a{
+    color: var(--cor7);
+    text-decoration: none;
+    padding: 2px;
+    margin: 0px 10px;
+}
+
+div.redes > a:hover{
+    color:var(--cor1)
 }
         
 
 
 @media screen and (min-width: 768px) {
     body{
-        background-color: var(--cor8);
+        background-image: linear-gradient(to left, #16f5554d, #f4161649);
     }
     
+    .links a:hover{
+        transition: 1s;
+    }
 }
 
