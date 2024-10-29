@@ -14,104 +14,112 @@ Tela grande: acima de 1200px
     padding: 0px;
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root{
+    box-sizing: border-box;
+  }
+  
+  :root {
     --cor0: #ffffff;
-    --cor1: #F41616;
-    --cor2: #B53E3E; 
-    --cor3: #754545;
-    --cor4: #16f555;
+    --cor1: #333333;
+    --cor2: #2E4053;
+    --cor3: #8BC34A;
+    --cor4: #FFC107;
     --cor5: #44A05E;
     --cor6: #394B3E;
     --cor7: #000000;
-    --cor8: #2196F3;
-
-}
-
-body{
-    background-image: linear-gradient(to left, #f4161649, #16f5554d);
-}
-    
-header{
+    --cor8: #8BC34A;
+  }
+  
+  body {
+    background-color: var(--cor8);
+  }
+  
+  header {
     padding: 10px;
     text-align: center;
     background-color: var(--cor2);
     color: var(--cor0);
-    
-}
-    
-main{
+    border-bottom: 1px solid var(--cor7);
+  }
+  
+  main {
     text-align: center;
     margin: auto;
-    
     background-color: var(--cor0);
-    border: 2px solid black;
-    
+    border: 2px solid var(--cor7);
     max-width: 700px;
     min-width: 300px;
-}
-
-main > p{
+    padding: 20px;
+  }
+  
+  main > p {
     padding: 10px;
     margin-bottom: 15px;
-}
-
-h2{
+    color: var(--cor1); /* #333333 */
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  
+  h2 {
     font-weight: bold;
     margin: 15px;
-}
-
-div.projeto{
+    color: var(--cor2);
+  }
+  
+  div.projeto {
     display: flex;
     flex-flow: row nowrap;
-}
-
-
- a.links{
+    justify-content: space-around;
+  }
+  
+  a.links {
     font-size: 1.2em;
     padding: 4px;
     margin: 10px;
     text-decoration: none;
-
     flex: auto;
-
     color: var(--cor7);
-
-    border: 2px solid ;
+    border: 2px solid var(--cor4);
     background-color: var(--cor4);
-}
-    
-a.links:hover{
-    color: var(--cor7);
-    background-color: #F41616;
+    transition: 0.3s;
+  }
+  
+  a.links:hover {
+    color: var(--cor0);
+    background-color: var(--cor1);
     border: 2px solid var(--cor7);
-}
-
-div.redes{
+  }
+  
+  div.redes {
     margin: 10px;
-}
-
-div.redes > a{
+  }
+  
+  div.redes > a {
     color: var(--cor7);
     text-decoration: none;
     padding: 2px;
     margin: 0px 10px;
-}
-
-div.redes > a:hover{
-    color:var(--cor1)
-}
-        
-
-
-@media screen and (min-width: 768px) {
-    body{
-        background-image: linear-gradient(to left, #16f5554d, #f4161649);
+    transition: 0.3s;
+  }
+  
+  div.redes > a:hover {
+    color: var(--cor1);
+  }
+  
+  img {
+    padding: 0px;
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      background-image: none;
     }
-    
-    .links a:hover{
-        transition: 1s;
+    .links a:hover {
+      transition: 1s;
     }
-}
+  }
 
+  
