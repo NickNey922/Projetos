@@ -36,9 +36,16 @@ th.peq{
 tfoot{
     text-align: left;
 }
-th > img.logo{
-    width: 70px;
-    height: 70px;
+
+.img{
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    width: 130px;
+    height: 90px;
 }
 
 a{
@@ -58,4 +65,10 @@ a:hover{
     box-shadow: 0px 0px 5px black;
     transition: 0.2s;
 
+}
+
+@media print{
+    .botao{
+        display: none;
+    }    
 }
